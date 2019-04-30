@@ -23,6 +23,7 @@ def clock(fmt=DEFAULT_FMT):  # <1>
         return clocked  # <9>
     return decorate  # <10>
 
+
 if __name__ == '__main__':
 
     @clock()  # <11>
