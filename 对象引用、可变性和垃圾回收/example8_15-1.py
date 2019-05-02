@@ -10,10 +10,10 @@ class TwilightBus:
     def __init__(self, passengers=None):
         if passengers is None:
             self.passengers = []
+        # 创建副本
         else:
             self.passengers = list(passengers)
 
-    # 在self.passengers上调用.remove和.append方法其实会修改传给构造方法的那个列表
     def pick(self, name):
         self.passengers.append(name)
 
