@@ -10,6 +10,7 @@ import collections
 # namedtuple用以构建只有少数属性但是没有方法的对象---比如数据库条目
 Card = collections.namedtuple('Card',['rank','suit'])
 
+
 class FrenchDeck:
     ranks = [str(n) for n in range(2,11)] + list('JQKA')
     suits = '黑桃 方块 梅花 红桃'.split()
@@ -24,8 +25,7 @@ class FrenchDeck:
     def __getitem__(self, item):
         return self._cards[item]
 
-
-
+'''
 deck = FrenchDeck()
 
 print(len(deck))
@@ -61,10 +61,11 @@ suit_values = dict(黑桃=3, 红桃=2, 方块=1, 梅花=0)
 print(suit_values)
 print(len(suit_values))
 
-'''排序'''
+# 排序
 def spades_high(card):
     rank_value = FrenchDeck.ranks.index(card.rank)
     return rank_value * len(suit_values) + suit_values[card.suit]
 
 for card in sorted(deck, key=spades_high):
     print(card)
+'''

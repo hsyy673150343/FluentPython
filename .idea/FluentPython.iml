@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/一等函数" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/函数装饰器和闭包" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/符合Python风格的对象" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Python数据模型" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
